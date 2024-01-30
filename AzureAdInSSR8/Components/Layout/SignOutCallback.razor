@@ -1,0 +1,17 @@
+﻿<!-- SignOutCallback.razor -->
+@* @page "/signout-callback-oidc"
+
+@inject NavigationManager NavigationManager
+
+@code {
+    protected override void OnInitialized()
+    {
+        NavigateToMainPage();
+    }
+
+    private void NavigateToMainPage()
+    {
+        NavigationManager.NavigateTo("/", forceLoad: true);
+    }
+}
+ *@
